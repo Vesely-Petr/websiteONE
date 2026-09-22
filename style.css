@@ -1,0 +1,69 @@
+/* 1. Základ stránky - písmo a barva pozadí */
+body {
+    font-family: Arial, sans-serif; /* Hezké, čisté písmo bez patek */
+    background-color: #f0f2f5; /* Světle šedé pozadí stránky */
+    color: #333333; /* Tmavě šedá barva textu (lépe se čte než úplně černá) */
+    margin: 0; /* Zruší bílé okraje kolem celé stránky */
+    padding: 0;
+}
+
+/* 2. Menu v záhlaví */
+header {
+    background-color: #2c3e50; /* Tmavě modré pozadí */
+    text-align: center; /* Vycentruje menu doprostřed */
+    padding: 15px 0; /* Přidá místo nahoře a dole uvnitř tmavého pruhu */
+}
+
+nav ul {
+    list-style-type: none; /* Skryje odrážky (tečky) u seznamu */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Poskládá položky seznamu vedle sebe (do řádku) */
+    margin: 0 15px; /* Udělá mezery mezi jednotlivými odkazy */
+}
+
+nav ul li a {
+    color: white; /* Bílý text odkazů v menu */
+    text-decoration: none; /* Zruší podtržení odkazů */
+    font-size: 18px; /* Zvětší písmo */
+    padding: 10px; /* Zvětší klikatelnou plochu kolem textu */
+}
+
+/* Co se stane, když na odkaz v menu najedeš myší */
+nav ul li a:hover {
+    background-color: #34495e; /* Pozadí trochu zesvětlá */
+    border-radius: 5px; /* Zakulatí se rohy pozadí */
+}
+
+/* 3. Hlavní obsahová část */
+main {
+    background-color: white; /* Bílý obdélník s textem */
+    max-width: 800px; /* Omezí šířku, aby text nešel přes celou obrazovku */
+    margin: 40px auto; /* Vycentruje bílý obdélník na střed obrazovky */
+    padding: 30px; /* Odsazení textu od okrajů bílého obdélníku */
+    border-radius: 8px; /* Mírně zakulatí rohy bílého obdélníku */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Přidá jemný stín pro 3D efekt */
+}
+
+img {
+    max-width: 100%; /* Obrázek se přizpůsobí šířce kontejneru */
+    height: auto; /* Zachová poměr stran obrázku */
+    display: block; /* Odstraní případné mezery pod obrázkem */
+    margin: 20px auto; /* Vycentruje obrázek na střed kontejneru */
+}
+
+/* Nadpisy */
+h1, h2 {
+    color: #2c3e50; /* Stejná tmavě modrá jako má menu */
+}
+
+/* 4. Zápatí (patička) stránky */
+footer {
+    text-align: center; /* Vycentruje text */
+    padding: 20px;
+    color: #777777; /* Světlejší šedá */
+    font-size: 14px;
+}
